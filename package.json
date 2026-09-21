@@ -1,0 +1,33 @@
+{
+  "name": "tethershell-agent",
+  "version": "0.5.0",
+  "description": "Local Tethershell agent for connecting your computer to Tethershell and ChatGPT",
+  "scripts": {
+    "start": "node apps/agent/index.mjs",
+    "pair": "node apps/agent/pair.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tethershell/tethershell-agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tethershell/tethershell-agent/issues"
+  },
+  "homepage": "https://github.com/tethershell/tethershell-agent#readme",
+  "keywords": [
+    "tethershell",
+    "mcp",
+    "chatgpt",
+    "agent"
+  ],
+  "license": "UNLICENSED",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "ws": "8.21.3",
+    "zod": "3.25.76"
+  }
+}
